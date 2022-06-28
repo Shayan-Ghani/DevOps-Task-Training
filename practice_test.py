@@ -10,7 +10,7 @@ number = input("How much : ")
 output = textMultiplier(text, number)
 if output == "Ali Sorena":
     print("Passed!")
-    exit(10)
+    exit(0)
 else:
     print("Failed!")    
     exit(1)

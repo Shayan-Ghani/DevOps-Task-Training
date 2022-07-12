@@ -7,12 +7,17 @@ from sys import exit
 
 
 def textMultiplier(text, number):
-    if not text == "" or not number == "": 
-        if not number.isnumeric():
-            print("Enter a number...")
-            exit(1)    
-        else:
-            return text * int(number)
+
+    text = input("Enter your peiece of text : ") + "/n"
+    number = input("How much : ")
+
+    if text == "" or number == "": 
+        print("Don't leave it empty!")
+        exit(1) 
+    elif number.isnumeric() == False:
+        print("Enter a number...")
+        exit(1)    
     else:
-        print("Don't leave it empty!") 
-        exit(1)
+        return text * int(number)
+        exit(0)
+        

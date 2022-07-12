@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 
 from sys import exit
-from practice import textMultiplier
+from text_multiplier import textMultiplier
 
-text = input("Enter your peiece of text : ")
+output = textMultiplier("Ali Sorena", 2)
+output = output.strip()
+print(output)
 
-number = input("How much : ")
-
-output = textMultiplier(text, number)
-if output == "Ali Sorena":
+if output.lower() == "alisorenaalisorena":
     print("Passed!")
-    exit(10)
+    exit(0)
 else:
     print("Failed!")    
     exit(1)

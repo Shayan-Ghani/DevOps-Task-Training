@@ -3,13 +3,14 @@
 from sys import exit
 from text_multiplier import textMultiplier
 
-output = textMultiplier("Ali Sorena", 2)
-output = output.strip()
-print(output)
-
-if output.lower() == "alisorenaalisorena":
-    print("Passed!")
+text = textMultiplier("ALI SORENA, 3").lower()
+output = ""
+for i in range(len(text)):
+    output += text[i].strip()
+print(output)    
+if output == "alisorenaalisorenaalisorena":
+    print("passed")
     exit(0)
 else:
-    print("Failed!")    
+    print("failed")    
     exit(1)
